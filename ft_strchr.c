@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/18 16:42:01 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/22 21:28:44 by sjuery           ###   ########.fr       */
+/*   Created: 2017/09/22 13:42:53 by sjuery            #+#    #+#             */
+/*   Updated: 2017/11/05 03:58:56 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int in)
+char	*ft_strchr(const char *s, int c)
 {
-	while (*str && *str != in)
-		str++;
-	if (*str == in)
-		return ((char *)str);
+	while (*s && *s != c)
+		s++;
+	if (*s == c)
+		return ((char *)s);
 	else
 		return (NULL);
 }

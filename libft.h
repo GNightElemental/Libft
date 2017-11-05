@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 15:42:34 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/22 22:10:54 by sjuery           ###   ########.fr       */
+/*   Updated: 2017/11/05 04:23:12 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,9 @@ void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-void				ft_lstlink(t_list **alst, t_list *new);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *));
 
 int					ft_atoi(const char *str);
-char				*ft_itoa_base(int value, int base);
 char				*ft_itoa(int n);
 
 int					ft_isalnum(int c);
@@ -80,6 +78,7 @@ char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(const char *s1, const char *s2);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
+void				ft_swap(int *a, int *b);
 
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);

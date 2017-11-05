@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 13:36:52 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/22 21:34:05 by sjuery           ###   ########.fr       */
+/*   Updated: 2017/11/05 03:47:12 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 int		ft_isdigit(int chr)
 {
-	if (chr >= 48 && chr <= 57)
-		return (1);
-	else
-		return (0);
+	return (chr >= 48 && chr <= 57);
 }

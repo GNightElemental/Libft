@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 16:41:14 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/21 14:14:14 by sjuery           ###   ########.fr       */
+/*   Updated: 2017/11/05 03:42:40 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,23 @@
 
 int	ft_atoi(const char *str)
 {
-	int	is_neg;
-	int	num;
+	int	sign;
+	int result;
 
-	is_neg = 0;
-	num = 0;
+	sign = 1;
+	result = 0;
 	while ((*str == ' ') || (*str == '\t') || (*str == '\n')
 		|| (*str == '\v') || (*str == '\f') || (*str == '\r'))
 		str++;
-	if (*str == 45)
-		is_neg = 1;
-	if ((*str == 45) || (*str == 43))
+	if (*str == '-')
+		sign = -1;
+	if (*str == '+' || *str == '-')
 		str++;
 	while ((*str >= 48) && (*str <= 57))
 	{
-		num *= 10;
-		num += ((int)*str - 48);
+		result *= 10;
+		result += ((int)*str - 48);
 		str++;
 	}
-	if (is_neg)
-		return (-num);
-	else
-		return (num);
+	return (sign * result);
 }

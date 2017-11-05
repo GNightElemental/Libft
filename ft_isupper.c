@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:07:56 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/22 21:34:19 by sjuery           ###   ########.fr       */
+/*   Updated: 2017/11/05 03:47:54 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 int		ft_isupper(int chr)
 {
-	if (chr >= 65 && chr <= 90)
-		return (1);
-	else
-		return (0);
+	return (chr >= 65 && chr <= 90);
 }

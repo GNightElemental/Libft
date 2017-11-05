@@ -45,6 +45,7 @@ SRCS = ft_memset.c \
 	   ft_strjoin.c \
 	   ft_strtrim.c \
 	   ft_strsplit.c \
+	   ft_swap.c \
 	   ft_itoa.c \
 	   ft_putchar.c \
 	   ft_putstr.c \
@@ -60,7 +61,6 @@ SRCS = ft_memset.c \
 	   ft_lstadd.c \
 	   ft_lstiter.c \
 	   ft_lstmap.c \
-	   ft_lstlink.c \
 	   ft_isupper.c \
 	   ft_islower.c \
 	   ft_wordcount.c \
@@ -82,3 +82,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
+.SILENT: $(OBJS)

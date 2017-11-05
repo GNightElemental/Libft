@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlink.c                                       :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/22 20:59:40 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/22 21:00:10 by sjuery           ###   ########.fr       */
+/*   Created: 2017/09/24 13:32:53 by sjuery            #+#    #+#             */
+/*   Updated: 2017/10/19 14:13:23 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_lstlink(t_list **alst, t_list *new)
+void	ft_swap(int *a, int *b)
 {
-	if (new == NULL)
-		return ;
-	new->next = *alst;
-	*alst = new;
+	int tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }

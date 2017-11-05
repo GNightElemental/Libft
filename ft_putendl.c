@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/22 17:01:53 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/24 15:28:57 by sjuery           ###   ########.fr       */
+/*   Created: 2017/10/19 16:04:28 by sjuery            #+#    #+#             */
+/*   Updated: 2017/10/19 16:04:29 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 void	ft_putendl(char const *s)
 {
-	if (!s)
-		return ;
 	ft_putendl_fd(s, 1);
 }

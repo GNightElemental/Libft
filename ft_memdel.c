@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 09:19:51 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/24 14:37:26 by sjuery           ###   ########.fr       */
+/*   Updated: 2017/11/05 03:54:03 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_memdel(void **ap)
 	if (!ap)
 		return ;
 	free(*ap);
-	if (*ap != NULL)
+	if (*ap)
 		*ap = NULL;
 }

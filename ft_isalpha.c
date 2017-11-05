@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:21:30 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/22 21:33:32 by sjuery           ###   ########.fr       */
+/*   Updated: 2017/11/05 03:46:24 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 int		ft_isalpha(int chr)
 {
-	if (ft_islower(chr) || ft_isupper(chr))
-		return (1);
-	else
-		return (0);
+	return (ft_islower(chr) || ft_isupper(chr));
 }

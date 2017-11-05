@@ -3,34 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/21 23:38:51 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/24 18:50:44 by sjuery           ###   ########.fr       */
+/*   Created: 2017/09/22 13:32:53 by sjuery            #+#    #+#             */
+/*   Updated: 2017/10/19 13:34:20 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *str;
-	char *mix;
+	char *new;
 
-	if (!s1 && !s2)
-		return (NULL);
-	else if (!s1)
-		return ((char *)s2);
-	else if (!s2)
-		return ((char *)s1);
-	str = malloc(ft_strlen(s1) + ft_strlen(s2));
-	if (!str)
-		return (NULL);
-	mix = str;
-	while (*s1)
-		*mix++ = *s1++;
-	while (*s2)
-		*mix++ = *s2++;
-	*mix = '\0';
-	return (str);
+	if (s1 && s2)
+	{
+		if (!(new = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
+			return (NULL);
+		ft_strcpy(new, s1);
+		return (ft_strcat(new, s2));
+	}
+	return (NULL);
 }

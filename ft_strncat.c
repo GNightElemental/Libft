@@ -3,24 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/19 14:52:25 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/21 12:35:32 by sjuery           ###   ########.fr       */
+/*   Created: 2017/09/23 14:02:57 by sjuery            #+#    #+#             */
+/*   Updated: 2017/10/19 14:17:37 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *str1, const char *str2, size_t len)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	char *tstr1;
+	char *tmp;
 
-	tstr1 = str1;
-	while (*tstr1)
-		tstr1++;
-	while (*str2 && len-- > 0)
-		*tstr1++ = *str2++;
-	*tstr1 = '\0';
-	return (str1);
+	tmp = s1;
+	while (*tmp)
+		tmp++;
+	while (*s2 && n > 0)
+	{
+		*tmp++ = *s2++;
+		n--;
+	}
+	*tmp = '\0';
+	return (s1);
 }

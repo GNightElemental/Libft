@@ -3,24 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/19 19:06:56 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/21 12:04:58 by sjuery           ###   ########.fr       */
+/*   Created: 2017/09/23 13:28:53 by sjuery            #+#    #+#             */
+/*   Updated: 2017/10/19 14:01:45 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *str1, const char *str2)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	char *tstr1;
-
-	tstr1 = str1;
-	while (*tstr1)
-		tstr1++;
-	while (*str2)
-		*tstr1++ = *str2++;
-	*tstr1 = '\0';
-	return (str1);
+	return (ft_strncat(s1, s2, ft_strlen(s2)));
 }

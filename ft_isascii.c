@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 15:59:44 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/22 21:33:54 by sjuery           ###   ########.fr       */
+/*   Updated: 2017/11/05 03:46:38 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 int		ft_isascii(int chr)
 {
-	if (chr >= 0 && chr <= 127)
-		return (1);
-	else
-		return (0);
+	return (chr >= 0 && chr <= 127);
 }

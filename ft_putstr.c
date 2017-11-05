@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjuery <sjuery@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/07/04 11:21:19 by sjuery            #+#    #+#             */
-/*   Updated: 2017/09/24 15:28:27 by sjuery           ###   ########.fr       */
+/*   Created: 2017/10/19 16:04:28 by sjuery            #+#    #+#             */
+/*   Updated: 2017/10/23 16:01:24 by sjuery           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 void	ft_putstr(char const *s)
 {
-	if (!s)
-		return ;
 	ft_putstr_fd(s, 1);
 }
